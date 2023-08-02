@@ -1,3 +1,5 @@
+@import "./_vars.sass"
+
 @mixin mobile-media-query
   @media (max-width: 768px)
     @content
@@ -6,3 +8,9 @@
   display: flex
   justify-content: center
   align-items: center
+
+@mixin box-shadow($shadow: 2px 10px 19px -10px $text-primary)
+ -webkit-box-shadow: $shadow
+ -moz-box-shadow: $shadow
+ box-shadow: $shadow
+

@@ -12,3 +12,11 @@ export const formatDate = (dateString: string): string => {
     return `${day} ${month} ${year}`;
 }
 
+export const truncateText = (text: string, maxLength: number, showEllipsis = true) => {
+    if (!text || text.length <= maxLength) {
+        return text;
+    }
+
+    const truncatedText = text.substring(0, maxLength);
+    return showEllipsis ? `${truncatedText}...` : truncatedText;
+}
