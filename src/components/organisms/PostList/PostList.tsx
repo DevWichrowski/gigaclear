@@ -13,10 +13,14 @@ interface IPostListProps {
 const PostList = (props: IPostListProps) => {
     const {posts} = props;
 
+    const sortedPosts = posts.sort((a, b) => {
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
+    });
+
     return (
         <div>
             <List
-                data={posts}
+                data={sortedPosts}
                 renderItem={(item) => <Post
                     id={item.id}
                     title={item.title}
