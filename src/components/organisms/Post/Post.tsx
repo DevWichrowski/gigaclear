@@ -5,8 +5,9 @@ import Image from 'next/image';
 import Tag from "@/atoms/Tag/Tag";
 import {formatDate} from "../../../utils/funcs";
 
-import styles from './Post.module.sass';
 import PostDescription from "@/atoms/PostDescription/PostDescription";
+
+import styles from './Post.module.sass';
 
 interface IPostProps {
     title: string;
@@ -42,7 +43,7 @@ const Post = (props: IPostProps) => {
                     <Tag text={formatDate(date.toString())} />
                 </div>
 
-                <PostDescription text={description} />
+                <PostDescription text={description} truncateCount={155}/>
             </div>
         </div>
     );
