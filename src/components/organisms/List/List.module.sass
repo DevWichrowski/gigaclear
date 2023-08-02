@@ -1,7 +1,12 @@
-.list
+@import "../../../styles/base/mixins"
+
+.List
   display: flex
   flex-wrap: wrap
   gap: 45px
   width: 100%
   height: 100%
   padding-bottom: 4rem
+
+  @include mobile-media-query
+    justify-content: center

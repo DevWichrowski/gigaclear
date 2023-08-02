@@ -22,7 +22,7 @@ const List = (props: IListProps) => {
     }
 
     return (
-        <div className={styles.list}>
+        <div className={styles.List}>
             {!data && makeArray(limit).map((item: number) => (
                 <Fragment key={item}>
                     {loadingComponent}
