@@ -9,6 +9,7 @@ import PostDescription from "@/atoms/PostDescription/PostDescription";
 import {formatDate} from "../../../utils/funcs";
 
 import styles from './Post.module.sass';
+import DateLabel from "@/atoms/DateLabel/DateLabel";
 
 interface IPostProps {
     id: number;
@@ -51,7 +52,7 @@ const Post = (props: IPostProps) => {
                     <PostDescription text={description} truncateCount={155} />
 
                     <div className={styles.mobileDate}>
-                        {formatDate(date.toString())}
+                        <DateLabel date={date.toString()} />
                     </div>
                 </div>
             </div>
