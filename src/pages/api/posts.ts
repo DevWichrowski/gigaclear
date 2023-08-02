@@ -6,5 +6,5 @@ export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<any>
 ) {
-    res.status(200).json(mockedPosts)
+    return res.status(200).json(mockedPosts)
 }
