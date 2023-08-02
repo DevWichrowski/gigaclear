@@ -1,10 +1,12 @@
-import React, { ReactNode } from 'react';
+import React, {ReactNode} from 'react';
 import styles from './Main.module.sass'
 
-export interface MainContentProps {
-  children: ReactNode
+export interface IMainContentProps {
+    children: ReactNode
 }
 
-export const Main: React.FC<MainContentProps> = ({children}) => {
-  return <main className={styles.main}>{children}</main>
+export const Main = (props: IMainContentProps) => {
+    const {children} = props
+
+    return <main className={styles.main}>{children}</main>
 }

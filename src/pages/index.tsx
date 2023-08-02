@@ -1,4 +1,6 @@
 import {Layout} from "../components/layout";
+import List from "../components/organisms/List/List";
+import Post from "../components/organisms/Post/Post";
 
 interface IHomeProps {
     posts: IHomeProps;
@@ -9,7 +11,10 @@ const Home = (props: IHomeProps) => {
 
     return (
         <Layout>
-            content
+            <List
+                data={posts}
+                renderItem={(item: any) => <Post />}
+            />
         </Layout>
     )
 }
