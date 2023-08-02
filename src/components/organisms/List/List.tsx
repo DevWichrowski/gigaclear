@@ -2,12 +2,14 @@ import React, {Fragment, ReactNode} from 'react';
 
 import {makeArray} from "../../../utils/funcs";
 
+import {IPost} from "../../../data/mocked-posts";
 import styles from '././List.module.sass';
 
+import styles from '././List.module.sass';
 interface IListProps {
     data: any;
     limit?: number;
-    renderItem: any;
+    renderItem: (element: IPost) => any;
     loadingComponent?: ReactNode;
 }
 

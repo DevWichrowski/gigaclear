@@ -3,12 +3,13 @@ import List from "../components/organisms/List/List";
 import Post from "../components/organisms/Post/Post";
 
 import TextHeader from "@/atoms/TextHeader/TextHeader";
+import {IPost} from "../data/mocked-posts";
 
 import styles from "./index.module.sass"
 
 
 interface IHomeProps {
-    posts: IHomeProps;
+    posts: IPost[];
 }
 
 const Home = (props: IHomeProps) => {
@@ -21,7 +22,14 @@ const Home = (props: IHomeProps) => {
             </div>
             <List
                 data={posts}
-                renderItem={(item: any) => <Post />}
+                renderItem={(item) => <Post
+                    title={item.title}
+                    description={item.shortDescription}
+                    topic={item.topic}
+                    author={item.author}
+                    date={item.date}
+                    image={item.thumbnailSrc}
+                />}
             />
         </Layout>
     )
