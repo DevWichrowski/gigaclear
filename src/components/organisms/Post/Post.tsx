@@ -43,10 +43,16 @@ const Post = (props: IPostProps) => {
                             <Tag text={author} />
                         </div>
 
-                        <Tag text={formatDate(date.toString())} />
+                        <div className={styles.desktopDate}>
+                            <Tag text={formatDate(date.toString())} />
+                        </div>
                     </div>
 
                     <PostDescription text={description} truncateCount={155} />
+
+                    <div className={styles.mobileDate}>
+                        {formatDate(date.toString())}
+                    </div>
                 </div>
             </div>
         </Link>

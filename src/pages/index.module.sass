@@ -1,3 +1,7 @@
-.Home
-  .separator
-    margin: 50px 0
+@import "../styles/base/mixins"
+
+.separator
+  margin: 50px 0
+
+  @include mobile-media-query
+    margin: 22px 0 65px 0
