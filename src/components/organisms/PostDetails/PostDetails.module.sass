@@ -8,6 +8,9 @@
   align-items: center
   padding-bottom: 50px
 
+  @include mobile-media-query
+    width: 100%
+
   .header
     max-width: 686px
     margin: 55px 0 12px 0
@@ -15,6 +18,9 @@
   .shortDescription
     width: 460px
     margin-bottom: 37px
+
+    @include mobile-media-query
+      width: 100%
 
   .image
     position: relative
@@ -25,7 +31,22 @@
     height: 500px
     margin: 30px 0 21px 0
 
+    @include mobile-media-query
+      height: 248px
+
+
+  .captionContainer
+    display: block
+
+    @include mobile-media-query
+      display: none
+
   .content
     width: 650px
     max-width: 650px
     margin-top: 70px
+
+    @include mobile-media-query
+      width: 100%
+      margin-top: 0
+

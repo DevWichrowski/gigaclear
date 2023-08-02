@@ -38,7 +38,9 @@ const PostDetails = (props: IPostDetailsProps) => {
                 <Image src={imageSrc} alt={title} fill />
             </div>
 
-            <Captions author={author} date={date.toString()} topic={topic} />
+            <div className={styles.captionContainer}>
+                <Captions author={author} date={date.toString()} topic={topic} />
+            </div>
 
             <div className={styles.content}>
                 <HtmlDescription html={fullDescription} />
