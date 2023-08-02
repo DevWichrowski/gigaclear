@@ -1,0 +1,22 @@
+@import '../../../styles/base/mixins'
+@import '../../../styles/base/vars'
+
+.Button
+  @include flex-center
+
+  color: white
+  font-size: 16px
+  font-weight: 700
+  background-color: $primary
+  border-radius: 40px
+  padding: 12px 24px
+  cursor: pointer
+  outline: none
+  border: none
+  transition: 0.3s ease-in-out all
+
+  &:hover
+    background-color: darken($primary, 5%)
+
+
+

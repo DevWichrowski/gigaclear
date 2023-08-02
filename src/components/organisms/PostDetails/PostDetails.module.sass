@@ -1,6 +1,8 @@
 @import '../../../styles/base/mixins'
 
 .PostDetails
+  width: 1020px
+  margin: 0 auto
   display: flex
   flex-direction: column
   align-items: center
@@ -15,14 +17,14 @@
 
   .image
     position: relative
+
     @include flex-center
 
+    width: 100%
     height: 500px
-    max-height: 500px
-    width: 1020px
-    max-width: 1020px
     margin: 30px 0 21px 0
 
   .content
     width: 650px
     max-width: 650px
+    margin-top: 70px

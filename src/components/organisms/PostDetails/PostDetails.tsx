@@ -10,6 +10,7 @@ import {IPost} from "../../../data/mocked-posts";
 
 import HtmlDescription from "@/atoms/HtmlDescription/HtmlDescription";
 
+import Captions from "@/molecules/Captions/Captions";
 import styles from './PostDetails.module.sass';
 
 interface IPostDetailsProps {
@@ -36,6 +37,8 @@ const PostDetails = (props: IPostDetailsProps) => {
             <div className={styles.image}>
                 <Image src={imageSrc} alt={title} fill />
             </div>
+
+            <Captions author={author} date={date.toString()} topic={topic} />
 
             <div className={styles.content}>
                 <HtmlDescription html={fullDescription} />
