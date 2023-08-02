@@ -8,10 +8,9 @@ import Image from 'next/image';
 
 import {IPost} from "../../../data/mocked-posts";
 
-
+import HtmlDescription from "@/atoms/HtmlDescription/HtmlDescription";
 
 import styles from './PostDetails.module.sass';
-import HtmlDescription from "@/atoms/HtmlDescription/HtmlDescription";
 
 interface IPostDetailsProps {
     post: IPost;
