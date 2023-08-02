@@ -49,7 +49,7 @@ const Post = (props: IPostProps) => {
                         </div>
                     </div>
 
-                    <PostDescription text={description} truncateCount={155} />
+                    <PostDescription text={description} truncateCount={175} />
 
                     <div className={styles.mobileDate}>
                         <DateLabel date={date.toString()} />
