@@ -20,3 +20,10 @@ export const truncateText = (text: string, maxLength: number, showEllipsis = tru
     const truncatedText = text.substring(0, maxLength);
     return showEllipsis ? `${truncatedText}...` : truncatedText;
 }
+
+export const classNames = (classes: { [key: string]: boolean }) => {
+    return Object.keys(classes)
+        .map(key => (classes[key] ? key : null))
+        .filter(Boolean)
+        .join(' ');
+};

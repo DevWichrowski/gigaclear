@@ -1,5 +1,6 @@
 import {Layout} from "../../components/layout";
 import {GetServerSidePropsContext} from 'next';
+import PostDetails from "../../components/organisms/PostDetails/PostDetails";
 
 interface IPostProps {
     details: any;
@@ -10,7 +11,7 @@ const Post = (props: IPostProps) => {
 
     return (
         <Layout>
-            <h1>{details.title}</h1>
+            <PostDetails post={details} />
         </Layout>
     )
 }

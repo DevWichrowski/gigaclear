@@ -2,14 +2,29 @@
 
 @import "../../../styles/base/mixins"
 
-.TextHeader
+.TextHeaderPrimary
   color: $primary
   font-size: 64px
   font-weight: 600
   line-height: 77px
+  margin: 0
 
   @include mobile-media-query
     font-size: 42px
     line-height: normal
     text-align: center
+
+.TextHeaderSecondary
+  color: $primary
+  font-size: 58px
+  font-weight: 700
+  margin: 0
+
+  @include mobile-media-query
+    font-size: 42px
+    line-height: normal
+    text-align: center
+
+.textCenter
+  text-align: center
 

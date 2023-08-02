@@ -16,7 +16,7 @@ export const Layout = (props: ILayoutProps) => {
     return (
         <div className={styles.Layout}>
             <Header />
-            <Image src="/assets/images/vector.png" alt="vector" layout="fill" className={styles.image} />
+            <Image src="/assets/images/vector.png" alt="vector" layout="fill" className={styles.image} quality={50} />
             <Main>
                 {children}
             </Main>
