@@ -1,5 +1,4 @@
 export const mockedPost = {
-    title: "Case Study",
     topic: "News",
     author: "John Doe",
     thumbnailSrc: "/assets/images/thumbnail.png",
