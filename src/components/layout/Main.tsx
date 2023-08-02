@@ -8,5 +8,5 @@ export interface IMainContentProps {
 export const Main = (props: IMainContentProps) => {
     const {children} = props
 
-    return <main className={styles.main}>{children}</main>
+    return <main className={styles.Main}>{children}</main>
 }

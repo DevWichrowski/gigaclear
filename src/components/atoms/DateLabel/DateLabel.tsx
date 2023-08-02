@@ -1,7 +1,8 @@
 import React from 'react';
 
-import styles from './DateLabel.module.sass';
 import {formatDate} from "../../../utils/funcs";
+
+import styles from './DateLabel.module.sass';
 
 interface IDateLabelProps {
     date: string;

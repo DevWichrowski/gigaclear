@@ -8,7 +8,7 @@ import styles from './Header.module.sass'
 
 export const Header: React.FC = () => {
     return (
-        <header className={styles.header}>
+        <header className={styles.Header}>
             <Link href="/">
                 <div className={styles.container}>
                     <Logo type='core' />

@@ -32,9 +32,9 @@ const Captions = (props: ICaptionsProps) => {
             </div>
 
 
-                <Button link="/">
-                    Sign up to this event
-                </Button>
+            <Button link="/">
+                Sign up to this event
+            </Button>
         </div>
     );
 };

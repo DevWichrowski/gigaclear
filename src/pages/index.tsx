@@ -1,9 +1,9 @@
 import {Layout} from "../components/layout";
-import List from "../components/organisms/List/List";
-import Post from "../components/organisms/Post/Post";
 
 import TextHeader from "@/atoms/TextHeader/TextHeader";
 import {IPost} from "../data/mocked-posts";
+
+import PostList from "../components/organisms/PostList/PostList";
 
 import styles from "./index.module.sass"
 
@@ -20,18 +20,7 @@ const Home = (props: IHomeProps) => {
             <div className={styles.separator}>
                 <TextHeader text="Check our latest Posts" />
             </div>
-            <List
-                data={posts}
-                renderItem={(item) => <Post
-                    id={item.id}
-                    title={item.title}
-                    description={item.shortDescription}
-                    topic={item.topic}
-                    author={item.author}
-                    date={item.date}
-                    image={item.thumbnailSrc}
-                />}
-            />
+            <PostList posts={posts} />
         </Layout>
     )
 }

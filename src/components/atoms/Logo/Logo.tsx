@@ -9,7 +9,7 @@ export interface LogoProps extends React.SVGProps<SVGSVGElement> {
 
 export const Logo: React.FC<LogoProps> = ({ type }) => {
   return (
-    <div className={styles.logo}>
+    <div className={styles.Logo}>
       <svg
         data-name="GigaclerLogo"
         xmlns="http://www.w3.org/2000/svg"
