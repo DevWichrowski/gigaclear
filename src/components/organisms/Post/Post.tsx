@@ -6,6 +6,7 @@ import Tag from "@/atoms/Tag/Tag";
 import {formatDate} from "../../../utils/funcs";
 
 import styles from './Post.module.sass';
+import PostDescription from "@/atoms/PostDescription/PostDescription";
 
 interface IPostProps {
     title: string;
@@ -41,9 +42,7 @@ const Post = (props: IPostProps) => {
                     <Tag text={formatDate(date.toString())} />
                 </div>
 
-                <div>
-                    Description
-                </div>
+                <PostDescription text={description} />
             </div>
         </div>
     );
