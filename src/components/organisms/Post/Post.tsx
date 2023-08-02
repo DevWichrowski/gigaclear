@@ -2,6 +2,9 @@ import React from 'react';
 
 import Image from 'next/image';
 
+import Tag from "@/atoms/Tag/Tag";
+import {formatDate} from "../../../utils/funcs";
+
 import styles from './Post.module.sass';
 
 interface IPostProps {
@@ -25,7 +28,23 @@ const Post = (props: IPostProps) => {
                 width={344}
                 height={241}
             />
-            {title}
+            <div className={styles.content}>
+                <h2 className={styles.title}>
+                    {title}
+                </h2>
+                <div className={styles.tags}>
+                    <div className={styles.start}>
+                        <Tag text={topic} />
+                        <Tag text={author} />
+                    </div>
+
+                    <Tag text={formatDate(date.toString())} />
+                </div>
+
+                <div>
+                    Description
+                </div>
+            </div>
         </div>
     );
 };

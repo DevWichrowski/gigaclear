@@ -1,11 +1,33 @@
+@import '/src/styles/base/vars'
+
 .Post
   display: flex
   width: 344px
   flex-direction: column
-  justify-content: flex-end
-  align-items: center
   gap: 20px
   flex-shrink: 0
 
   .thumbnail
     border-radius: 10px
+
+  .content
+    padding: 0 5px
+    display: flex
+    flex-direction: column
+    gap: 16px
+
+    .title
+      color: $text-primary
+      font-size: 24px
+      font-style: normal
+      font-weight: 600
+      line-height: 30px
+      margin: 0
+
+    .tags
+      display: flex
+      justify-content: space-between
+
+      .start
+        display: flex
+        gap: 16px
