@@ -1,6 +1,6 @@
 import React from 'react';
-import {Logo} from '@/atoms/Logo';
 import styles from './Header.module.sass'
+import {Logo} from "@/atoms/Logo/Logo";
 
 export const Header: React.FC = () => {
     return (
