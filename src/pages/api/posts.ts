@@ -1,10 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import {mockedPosts} from "../../data/mocked-posts";
+import {IPost, mockedPosts} from "../../data/mocked-posts";
 
 
 export default function handler(
     req: NextApiRequest,
-    res: NextApiResponse<any>
+    res: NextApiResponse<IPost[]>
 ) {
     return res.status(200).json(mockedPosts)
 }
