@@ -23,6 +23,7 @@ const Home = (props: IHomeProps) => {
             <List
                 data={posts}
                 renderItem={(item) => <Post
+                    id={item.id}
                     title={item.title}
                     description={item.shortDescription}
                     topic={item.topic}

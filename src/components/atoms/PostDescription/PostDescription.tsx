@@ -1,7 +1,8 @@
 import React from 'react';
 
-import styles from "./PostDescription.module.sass"
 import {truncateText} from "../../../utils/funcs";
+
+import styles from "./PostDescription.module.sass"
 
 interface IPostDescriptionProps {
     text: string;

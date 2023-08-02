@@ -16,7 +16,7 @@ export interface IPost {
 
 export const mockedPosts: IPost[] = [];
 
-makeArray(5).map((index) => {
+makeArray(8).map((index) => {
     mockedPosts.push({
         ...mockedPost,
         id: ++index,
