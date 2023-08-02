@@ -1,7 +1,15 @@
 @import '../../../styles/base/_vars.sass'
 
+@import "../../../styles/base/mixins"
+
 .TextHeader
   color: $primary
-  font-size: 4rem
+  font-size: 64px
   font-weight: 600
   line-height: 77px
+
+  @include mobile-media-query
+    font-size: 42px
+    line-height: normal
+    text-align: center
+
