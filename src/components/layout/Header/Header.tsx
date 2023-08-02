@@ -1,13 +1,19 @@
 import React from 'react';
-import styles from './Header.module.sass'
 import {Logo} from "@/atoms/Logo/Logo";
+
+import Link from 'next/link';
+
+import styles from './Header.module.sass'
+
 
 export const Header: React.FC = () => {
     return (
         <header className={styles.header}>
-            <div className={styles.container}>
-                <Logo type='core' />
-            </div>
+            <Link href="/">
+                <div className={styles.container}>
+                    <Logo type='core' />
+                </div>
+            </Link>
         </header>
     )
 }
